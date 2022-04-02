@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="header"><h1>Library</h1></header>
+    <main class="library">
+      <button type="sumbit" class="library-btn">+</button>
+      <div class="books-container"></div>
+    </main>
+    <div class="overlay displayNone">
+      <div class="add-book-modal displayNone">
+        <form action="#">
+          <h2>Add Book</h2>
+          <input type="text" placeholder="Title" data-title="" required />
+          <input type="text" placeholder="Author" data-author="" required />
+          <input
+            type="number"
+            min="1"
+            placeholder="Pages"
+            data-pages="pages"
+            required
+          />
+          <label class="modal-checkbox">
+            <input type="checkbox" class="checkbox" data-isRead="" />
+            <h3>Did you read it?</h3>
+          </label>
+          <button type="submit" class="add-book-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
