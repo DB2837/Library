@@ -1,0 +1,178 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  background-color: rgb(253, 248, 248);
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  border: none;
+  background-color: rgb(179, 175, 175);
+  height: 32px;
+  border-radius: 7px;
+  font-size: 20px;
+}
+
+button:hover {
+  transform: scale(1.03);
+  background-color: rgb(161, 158, 158);
+}
+
+.header {
+  text-align: center;
+  background-color: rgb(231, 224, 224);
+  box-shadow: 2px 2px #d6cbcb;
+  padding: 40px;
+}
+
+.library {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.library-btn {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 36px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  width: 70px;
+  height: 70px;
+  color: white;
+  background-color: black;
+}
+
+.library-btn:hover {
+  transform: scale(1.08);
+  color: rgb(53, 138, 230);
+  background-color: black;
+}
+
+.books-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 350px));
+  gap: 12px;
+  width: 80%;
+  min-width: 310px;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 150px;
+  padding: 30px;
+  margin: 12px;
+  justify-content: space-around;
+  border: 2px solid rgb(184, 176, 176);
+  border-radius: 5px;
+  box-shadow: 3px 4px #888888;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.book-card > * {
+  margin: 8px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.637);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 98;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-book-modal {
+  border: 3px solid rgb(0, 0, 0);
+  background-color: rgb(186, 204, 223);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 330px;
+  padding: 20px;
+}
+
+.displayNone {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 330px;
+  padding: 10px;
+}
+
+form > * {
+  padding: 10px;
+  margin: 8px;
+}
+
+form > button {
+  background-color: rgb(108, 207, 224);
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(6, 2, 59);
+}
+form > button:hover {
+  background-color: rgb(51, 214, 243);
+}
+
+.modal-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  z-index: 99;
+}
+
+.modal-checkbox > * {
+  margin: 5px;
+  font-size: 24px;
+}
+
+.checkbox {
+  height: 24px;
+  width: 24px;
+}
+
+input {
+  font-size: 22px;
+}
+
+.isRead {
+  background-color: rgb(101, 224, 70);
+}
+
+.isRead:hover {
+  background-color: rgb(51, 255, 0);
+}
+
+.notRead {
+  background-color: rgba(243, 76, 76, 0.808);
+}
+
+.notRead:hover {
+  background-color: rgba(231, 34, 34, 0.808);
+}
